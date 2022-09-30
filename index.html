@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jogo da Forca</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="js/add-palavras.js">
+    <link rel="stylesheet" href="js/corpodaforca.js">
+    <link rel="stylesheet" href="js/jogo.js">
+    <link rel="stylesheet" href="js/palavras.js">
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
@@ -22,16 +25,20 @@
 
         <section class="jogo-da-forca">
             <main>
-                <h1 style="text-align: center;font-size: 25px;">Digite no teclado uma letra e tente adivinhar a palavra!</h1>
+                <h1 style="text-align: center;font-size: 25px;">Digite no teclado uma letra e tente adivinhar a palavra!
+                </h1>
                 <div class="mensagens">
-                    <canvas width="350px" height="300px"></canvas>
+                    <canvas width="300px" height="300px"></canvas>
                     <div class="mensagem">
                         <h2 class="perdedor"></h2>
                         <h2 class="vencedor"></h2>
                     </div>
                 </div>
                 <div class="palavras">
-                    <div class="palavra-secreta"></div>
+                    <div class="palavra-secreta">
+
+                    </div>
+
                     <div class="letras-erradas"></div>
                 </div>
             </main>
@@ -42,7 +49,8 @@
         </section>
         <section id="addPalavra">
             <form method="get" id="form">
-                <textarea name="nova-palavra" id="nova-palavra" cols="30" rows="10" placeholder="Digite a nova palavra aqui" style="text-align: center;"></textarea>
+                <textarea name="nova-palavra" id="nova-palavra" cols="30" rows="10"
+                    placeholder="Digite a nova palavra aqui" style="text-align: center;"></textarea>
                 <div id="importante">
                     <ion-icon name="alert-circle-sharp"></ion-icon>
                     <p>Máx. de 8 letras </p>
@@ -54,7 +62,7 @@
             </form>
         </section>
 
-    </div> 
+    </div>
     <footer>
         <div class="links">
 
@@ -72,6 +80,5 @@
     <script src="js/palavras.js"></script>
 
 </body>
-    
 
 </html>
