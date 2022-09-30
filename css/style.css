@@ -6,6 +6,7 @@
 }
 
 body {
+
     background: var(--cor-fundo);
 }
 
@@ -17,17 +18,10 @@ body {
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-main {
-    height: auto;
     display: flex;
     flex-direction: column;
-    width: 510px;
-    margin: 20px auto;
-    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .letras-erradas {
@@ -49,17 +43,14 @@ footer {
     text-decoration-line: none
 }
 
-header {
-    margin: 15px 0;
-}
 
 .logo {
     width: 30px;
-    margin-right: 5px;
+
 }
 
 h1 {
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: var(--cor-azulEscuro)
 }
@@ -84,12 +75,12 @@ textarea:focus {
     outline: 0;
 }
 
-
-
 button {
+    align-items: center;
+    width: 100px;
     border-radius: 20px;
     height: 50px;
-    width: 260px;
+    width: 250px;
     font-size: 25px;
     border: none;
     cursor: pointer;
@@ -97,8 +88,8 @@ button {
 
 #btnInicio {
     display: block;
-    width: 270px;
-    height: 120px;
+    width: 245px;
+    height: 100px;
     margin: 100px auto;
 }
 
@@ -115,7 +106,6 @@ button {
     border-radius: 20px;
     transition: background 1.5s;
     color: var(--cor-azulEscuro)
-   
 }
 
 .btn-principal {
@@ -132,9 +122,8 @@ button {
 
 .botoes {
     transition: background 1.5s;
-    width: 530px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+
+
 }
 
 #importante {
@@ -142,7 +131,6 @@ button {
     gap: 10px;
     align-items: center;
     color: var(--cor-mensagem-ajuda);
-    margin-bottom: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -190,7 +178,7 @@ button {
 }
 
 canvas {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     float: left;
     width: 350px;
     height: 300px;
@@ -203,27 +191,15 @@ section {
 
 @media screen and (max-width:420px) {
     .container {
-        width: 370px;
-        margin: 0 auto;
+        width: 100%;
+
     }
-    section {
-        width: 370px;
-        margin: 0 auto;
-    }
-    header {
-        margin-bottom: 30px;
-    }
-    main {
-        width: 370px;
-    }
-    button {
-        width: 350px;
-        margin: 0 auto;
-    }
+
     .botoes {
         display: flex;
+        justify-items: center;
         flex-direction: column;
-        width: 370px;
+        width: 100%;
         align-items: center;
     }
 
@@ -232,48 +208,61 @@ section {
         width: auto;
         height: auto;
     }
+
     .canvasMensagem {
         width: 350px;
         display: block;
     }
+
     .mensagem {
         text-align: center;
         margin: 20px auto;
         width: 370px;
     }
+
     .mensagem span {
         font-size: 12px;
     }
+
     h1 {
-        max-width: 400px;
+        align-items: center;
+        max-width: 350px;
         text-align: center;
-        margin-top: 20px;
+        padding: 1rem;
     }
+
     form {
         width: 370px;
     }
+
     textarea {
 
         width: 370px;
     }
- 
+
 }
 
 footer {
     text-align: center;
     font-family: 'Special Elite';
     font-size: 16px;
-   
+
+}
+
+
+p.copyright {
+    margin-top: 1rem;
 }
 
 .logo-github {
-    margin-top: 8px;
+    margin-top: 15px;
     width: 32px;
     height: 32px;
 
-} 
+}
+
 .logo-linkedin {
-    margin-top: 8px;
+    margin-top: 15px;
     width: 32px;
     height: 32px;
-}
+}  
